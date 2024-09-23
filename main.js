@@ -1,3 +1,33 @@
+// Get all buttons with the class "certificate-btn"
+var buttons = document.getElementsByClassName("certificate-btn");
+var modals = document.getElementsByClassName("modal");
+var closeBtns = document.getElementsByClassName("close");
+
+// Add event listeners to all buttons
+for (var i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function() {
+        var modalId = this.getAttribute("data-modal");
+        document.getElementById(modalId).style.display = "block";
+    }
+}
+
+// Add event listeners to close buttons inside modals
+for (var i = 0; i < closeBtns.length; i++) {
+    closeBtns[i].onclick = function() {
+        this.parentElement.parentElement.style.display = "none";
+    }
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+    for (var i = 0; i < modals.length; i++) {
+        if (event.target == modals[i]) {
+            modals[i].style.display = "none";
+        }
+    }
+}
+
+
 /*================== TOGGLE icon navbar ===========*/
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -64,8 +94,6 @@ const typed = new Typed('.multiple-text', {
     loop: true,
 });
 
-
-
 /*================== Fade-in effect on scroll ===========*/
 const fadeElements = document.querySelectorAll('.fade');
 
@@ -126,6 +154,3 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
-
-
