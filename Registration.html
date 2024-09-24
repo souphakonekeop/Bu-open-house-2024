@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- FONT -AWSOME-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- MAIN CSS-->
+        <link rel="stylesheet" href="styless.css">
+        <title>bu-open-house-2024 | @heresthecode | @heresthecode</title>
+    </head>
+    <body>
+        <!-- HEADER DESIGN-->
+        <header class="header">
+            <a href="index.html" class="logo">
+                <img src="img_logo/logo_bu.png" alt="Logo">
+            </a>
+
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+            
+
+            <nav class="navbar">
+                <a href="index.html" class="btn">&lt;Return</a>
+            </nav>
+        </header>
+
+    <!-- Registration Section -->
+    <section class="login" id="registrasion">
+        <div class="login-container" style="max-width: 500px; width: 90%; margin: 30px auto; padding: 15px; background: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <h2 class="heading">Registration Form</h2>
+
+            <form action="#" class="login-form" >
+                <hr style="margin-bottom: 20px;margin-top: 1px;border: 1px solid #ccc;;">
+                <div class="input-box" style="margin-bottom: 15px;">
+                    <label for="first-name" style="font-weight: bold; display: block; margin-bottom: 5px; color: rgb(72, 71, 71);font-size:medium;text-align: left;">Student Name</label>
+                    <input type="text" id="first-name" placeholder="Student Name" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;" required>
+                </div>
+            
+                <div class="input-box" style="margin-bottom: 15px;">
+                    <label for="gender" style="font-weight: bold; display: block; margin-bottom: 5px; color: rgb(72, 71, 71);font-size:medium;text-align: left;">Gender</label>
+                    <select id="gender" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;" required>
+                        <option value="" disabled selected >Please Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            
+                <div class="input-box" style="margin-bottom: 15px;">
+                    <label for="email" style="font-weight: bold; display: block; margin-bottom: 5px; color: rgb(72, 71, 71);font-size:medium;text-align: left;">Student E-mail</label>
+                    <input type="email" id="email" placeholder="yourname@bumail.net" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;" required>
+                </div>
+            
+                <div class="input-box" style="margin-bottom: 15px;">
+                    <label for="student-id" style="font-weight: bold; display: block; margin-bottom: 5px; color: rgb(72, 71, 71);font-size:medium;text-align: left;">Student ID</label>
+                    <input type="text" id="student-id" placeholder="Student ID" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;" required>
+                </div>
+            
+                <div class="input-box" style="margin-bottom: 15px;">
+                    <label for="classes" style="font-weight: bold; display: block; margin-bottom: 5px; color: rgb(72, 71, 71);font-size:medium;text-align: left;">List of Classes</label>
+                    <select id="classes" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 5px;" required>
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="class1">A101</option>
+                        <option value="class2">A102</option>
+                        <option value="class3">A103</option>
+                        <option value="class1">B101</option>
+                        <option value="class2">B102</option>
+                        <option value="class3">B103</option>
+                        <option value="class1">C101</option>
+                        <option value="class2">C102</option>
+                        <option value="class3">C103</option>
+                    </select>
+                </div>
+            
+                <button style="width: 100%; padding: 12px; background-color: #28a745; color: white; font-size: 16px; font-weight: bold; border: none; border-radius: 5px; cursor: pointer;" type="submit">Submit</button>
+            </form>
+            
+            
+        </div>
+    </section>
+
+        <!-- FOOTER DESIGN-->
+        <footer class="footer">
+            <div class="footer-text">
+                <p></p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#registrasion"><i class="fa-solid fa-angle-up"></i></a>
+            </div>
+        </footer>
+
+        <!-- SCROLL REVEAL JS-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- TYPEJS-->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- MAIN JS-->
+        <script src="main.js"></script>
+
+    </body>
+</html>
